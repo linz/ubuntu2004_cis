@@ -804,9 +804,7 @@
       - rule_1.5.3
 
 - name: "SCORED | 1.6.1 | PATCH | Ensure XD/NX support is enabled"
-  shell: |
-      set -o pipefail;
-      dmesg | grep -E "NX|XD" | grep " active"
+  shell: "grep ^flags /proc/cpuinfo | head -n1 | grep nx"
   args:
       executable: /bin/bash
   changed_when: false
