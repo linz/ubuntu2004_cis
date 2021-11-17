@@ -123,7 +123,7 @@ ubuntu2004cis_rule_2_4: true
 
 # Section 3 rules
 ubuntu2004cis_rule_3_1_1: true
-ubuntu2004cis_rule_3_1_2: true
+ubuntu2004cis_rule_3_1_2: false # WiFi required
 ubuntu2004cis_rule_3_2_1: true
 ubuntu2004cis_rule_3_2_2: true
 ubuntu2004cis_rule_3_3_1: true
